@@ -1,0 +1,29 @@
+.footer{
+    display: flex;
+    justify-content: space-between;
+    height: 2.8rem;
+    width: 10.4rem;
+    align-self: center;
+
+    // add spacing away from the button and center the social links
+    margin: 6.4rem auto 0 auto;
+
+    &__socials-icon{
+        color: white;
+        border-radius: 50%;
+
+        height: 2.7rem;
+        width: 2.8rem;
+        border: solid .092rem white;
+        border-radius: 50%;
+
+        display: grid;
+        justify-items: center;
+        align-items: center;
+
+        &:hover{
+            color: #FF52C1;
+            border-color: #FF52C1;
+        }
+    }
+}
