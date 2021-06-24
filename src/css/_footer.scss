@@ -1,12 +1,24 @@
+$bg: 800px;
+
 .footer{
     display: flex;
     justify-content: space-between;
     height: 2.8rem;
     width: 10.4rem;
-    align-self: center;
 
     // add spacing away from the button and center the social links
     margin: 6.4rem auto 0 auto;
+
+    @media(min-width: $bg){
+        grid-area: footer;
+        justify-self: end;
+        margin: initial;
+        margin-top: 2.7rem;
+
+        // increase footer size
+        width: 15.2rem;
+        height: 4rem;
+    }
 
     &__socials-icon{
         color: white;
@@ -20,6 +32,11 @@
         display: grid;
         justify-items: center;
         align-items: center;
+
+        @media(min-width: $bg){
+            width: 4rem;
+            height: 4rem;
+        }
 
         &:hover{
             color: #FF52C1;
