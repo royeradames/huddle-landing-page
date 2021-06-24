@@ -34,9 +34,17 @@
         width: 20rem;
         height: 4rem;
         cursor: pointer;
-
         &--margin{
             margin: auto;
+        }
+        &:hover{
+            // on hover change color
+            background-color: #E880E8;
+            color: white;
+
+            // highly button with a shadow
+            box-shadow: .2rem .4rem .9rem .3rem rgba(0, 0, 0, 25.86%);
+
         }
     }
 }
