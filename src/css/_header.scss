@@ -1,6 +1,9 @@
-$bg: 1440px;
+$bg: 800px;
 
 .header{
+    @media(min-width: $bg){
+        grid-area: header;
+    }
     &__logo{
         height: 1.9rem;
         width: 12rem;
@@ -8,7 +11,6 @@ $bg: 1440px;
         @media(min-width: $bg){
             width: 20rem;
             height: 3.2rem;
-            
         }
     }
 }

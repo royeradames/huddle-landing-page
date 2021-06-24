@@ -1,4 +1,4 @@
-$bg: 1440px;
+$bg: 800px;
 
 #root{
     background-image: url("../images/bg-mobile.svg");
@@ -16,6 +16,11 @@ $bg: 1440px;
     @media(min-width: $bg){
         padding: 6.4rem 8rem 4rem 8rem;
         display: grid;
-        
+        grid-template:
+            "header" min-content
+            "main" min-content
+            "footer" min-content
+            / 1fr
+        ;
     }
 }
