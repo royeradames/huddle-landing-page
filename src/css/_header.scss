@@ -1,7 +1,14 @@
+$bg: 1440px;
+
 .header{
     &__logo{
         height: 1.9rem;
         width: 12rem;
         
+        @media(min-width: $bg){
+            width: 20rem;
+            height: 3.2rem;
+            
+        }
     }
 }
